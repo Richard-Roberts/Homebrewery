@@ -1,0 +1,366 @@
+.arrowButton {
+  background-color: transparent;
+  height: 20px;
+  width: 20px;
+}
+
+.arrowDown {
+    align-items: center;
+    justify-content: center;
+    transform: rotate(180deg);
+}
+
+
+body {
+  background-color: whitesmoke;
+  margin: 0;
+};
+
+.bottomLine {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.link {
+  color: lightgrey;
+  background-color: transparent;
+  padding: 3px;
+  margin-left: 8px;
+  margin-bottom: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.linkButtons {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(43, 44, 46);
+  margin-bottom: 2%;
+ 
+}
+
+.linkCreate {
+  display: flex;
+  align-items: center;
+  background-color: #f37f70;
+  border: 2px solid #111;
+  border-radius: 8px;
+  box-sizing: border-box; 
+  color: #111;
+  cursor: pointer;
+  display: flex;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 14px;
+  height: 28px;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 100%;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  touch-action: manipulation;
+  text-align: justify; 
+}
+
+/* .linkCreate:after {
+  background-color: rgb(215, 199, 199);
+  text-decoration: none;
+  border-radius: 8px;
+  content: "";
+  display: block;
+  height: 18px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -2px;
+  transform: translate(8px, 8px);
+  transition: transform .2s ease-out;
+  z-index: -1;
+} */
+
+
+ 
+
+
+.created_by {
+  align-items: bottom;
+  justify-content: baseline;
+  font-size: 80%;
+  opacity: 50%;
+}
+
+.createButton {
+  padding-top: 10px;
+  padding-right: 25%;
+}
+
+.createdByLabel {
+  font-size: 80%;
+  opacity: 50%;
+}
+
+.cardBox {
+  display: inline-block;
+  border-style: solid;
+  border-radius: 10px;
+  min-width: 50%;
+  max-width: 50%;
+  justify-content: center;
+  margin-bottom: 10px;
+  box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.2);
+}
+
+.cost {
+  margin-left: 1%;
+  font-size: small;
+}
+
+.costLabel {
+  font-size: small;
+}
+
+.createBtn {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: rgb(36, 37, 39);
+  background: transparent;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border: 2px solid rgb(36, 37, 39);
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 #f37f70;
+}
+
+.createBtn:hover {
+  color: white;
+  box-shadow: inset 0 -100px 0 0 rgb(43, 44, 46);
+}
+
+.createBtn:active {
+  transform: scale(0.9);
+}
+
+
+.equipDetails {
+  padding-left: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px
+}
+
+.createDiv {
+  display: flex;
+  flex-direction: column;
+  /* border-style: solid;
+  border-radius: 10px;
+  border-width: 50%; */
+  min-width: 50%;
+  align-items: center;
+}
+
+.createInnerDiv{
+  border-style: solid;
+  display:flex;
+  flex-direction: column;
+  border-width: 50%;
+  min-width: 50%;
+  max-width: 50%;
+  padding: 8px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.2);
+}
+
+.description {
+  margin-bottom: 8%;
+}
+
+.equipList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.equipName {
+  font-weight: bold;
+  font-style: italic;
+  padding-left: 8px;
+  font-size: 150%;
+  margin-top: 1%;
+  margin-bottom: 0%; 
+}
+
+.header {
+  display: flex;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  margin-bottom: 10px;
+  align-items: center;
+  font-family:'cabin'
+}
+
+.headerTitle {
+  display: flex;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  align-items: center;
+  justify-content: center;
+  font-size: 200%;
+  background-color: rgb(36, 37, 39)
+}
+
+.headerButtons {
+  display: flex;
+  background-color: rgb(43, 44, 46);
+  padding-top: 10px;
+  padding-left: 25%;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.itemDescription {
+  margin-bottom: 0;
+}
+
+.itemDescriptionInput{
+  /* width: 100%; */
+  min-width: 100%;
+  max-width: 100%;
+  height: 35%;
+  font-style: italic;
+  font-family:'Times New Roman', Times, serif;
+}
+
+.itemDetails {
+  display: flex;
+}
+
+.item_class {
+  font-style: italic;
+  font-size: 120%;
+  margin-bottom: 0%;
+  margin-top: 1%;
+}
+
+.itemInput{
+  width: 100%;
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.line {
+  margin-top: 0;
+  padding:0
+}
+
+.mainDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 50%;
+  min-width: 50%;
+}
+
+.mainInput {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 50%;
+  min-width: 50%;
+  
+  
+    background-color: #eee;
+    border: none;
+    padding: 0.85rem;
+    font-size: 0.85rem;
+    
+    border-radius: 1rem;
+    color: lightcoral;
+    box-shadow: 0 0.4rem #dfd9d9;
+    cursor: pointer;
+    
+}
+
+.mainInput input:focus {
+  outline-color: lightcoral;
+ }
+
+.mainPageDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* max-width: 50%;
+  min-width: 50%; */
+}
+
+.mainSearchBtn {
+  padding: 15px 25px;
+  border: unset;
+  border-radius: 15px;
+  color: #212121;
+  z-index: 1;
+  background: #e8e8e8;
+  position: relative;
+  font-weight: 1000;
+  font-size: 17px;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  transition: all 250ms;
+  overflow: hidden;
+}
+
+
+
+
+
+p {
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+}
+
+.pageHeader {
+  margin-bottom: 10px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  color: whitesmoke;
+  ;
+}
+
+.rarity {
+  margin-left: 1%;
+  margin-top: 0;
+  margin-bottom: 2%;
+  font-size: small;
+}
+
+.rarityLabel {
+  font-size: small;
+}
+
+.score {
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.scoreDiv {
+  display: flex;
+  margin-top: 2%;
+}
+
+.scoreNumber {
+  margin-left: 10%;
+  margin-right: 10%;
+}
