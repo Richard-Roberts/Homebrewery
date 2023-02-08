@@ -1,8 +1,9 @@
+const keys = require('dotenv').config();
+console.log(process.env);
 const { Pool, Client } = require('pg');
-// const pg = require('pg');
+const pg = require('pg');
 
-const PG_URI = 'postgres://nvngxtas:KJQVAx9cjTG8oeR26iyh8dxf0Rer2WlE@heffalump.db.elephantsql.com/nvngxtas'; // DnD
-
+const PG_URI = process.env.URI;
 //ATTEMPTED CLIENT in place of POOL
 
 // const client = new pg.Client(PG_URI);
