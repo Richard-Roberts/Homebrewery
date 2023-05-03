@@ -38,7 +38,7 @@ class Main extends Component {
         </header>
         <div className="mainPageDiv">
           <div className = "mainDiv">
-            <input className="mainInput" placeholder="this totally works..."></input>
+            <input className="mainInput" placeholder="search..."></input>
             <button className="createBtn">Submit</button>
           </div>
         </div>
