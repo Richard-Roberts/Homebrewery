@@ -1,44 +1,11 @@
 import React, { useState, Component, useEffect } from 'react';
 import { Link, withRouter } from 'react-router-dom'; // will add this in with use for buttons
-
+import HeadingBar from './HeadingBar';
 
 class Create extends Component {
   constructor(props) {
     super(props);
     this.state = {};
-
-    // const createEquipment = props => {
-
-    //   const saveEquipment = () => {
-
-    //     const body = {
-    //       itemName: document.querySelector('#nameInput').value,
-    //       rarity: document.querySelector('#rarityInput').value,
-    //       cost: document.querySelector('#costInput').value,
-    //       description: document.querySelector('#descriptionInput').value,
-    //       created_by: document.querySelector('#created_byInput').value,
-    //       score: 1
-    //     };
-    
-
-    //     fetch('/api/create', {
-    //       method: 'POST',
-    //       headers: {
-    //         'Content-Type': 'Application/JSON'
-    //       },
-    //       body: JSON.stringify(body)
-    //     })
-    //       .then(resp => resp.json())
-    //       .then((data) => {
-    //         console.log(data);
-    //       })
-    //       .then(()=> {
-    //         props.history.push('/');
-    //       })
-    //       .catch(err => console.log('Equipment fetch /api/equipment: ERROR: ', err));
-    //   };
-  
-    // };
   }
 
   render () {
@@ -75,30 +42,7 @@ class Create extends Component {
 
     return (
       <section>
-        <header className="pageHeader">
-          <div className="headerTitle">Homebrew Compendium</div>
-          <div className="LinkButtons">
-            <div className="headerButtons">
-              <Link to="/">
-                <button className="link" type="button">
-            Home
-                </button>
-              </Link>
-              <Link to="/equipment">
-                <button className="link" type ="button">
-            Equipment
-                </button>
-              </Link>
-            </div>
-            <div className="createButton">
-              <Link to="/create">
-                <button className="linkCreate" type ="button">
-                  Create
-                </button>
-              </Link>
-            </div>
-          </div>
-        </header>
+        <HeadingBar></HeadingBar>
         <div className="createDiv">
           <div className="createInnerDiv">
             <h1>Create</h1>
