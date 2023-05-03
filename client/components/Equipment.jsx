@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom'; // will add this in with use for buttons
 import EquipmentBox from './EquipmentBox';
+import HeadingBar from './HeadingBar';
 
 
 class Equipment extends Component {
@@ -54,7 +55,8 @@ class Equipment extends Component {
     });
     return (
       <section>
-        <header className = "pageHeader">
+        <HeadingBar></HeadingBar>
+        {/* <header className = "pageHeader">
           <div className="headerTitle">Homebrew Compendium</div>
           <div className="LinkButtons">
             <div className="headerButtons">
@@ -77,7 +79,7 @@ class Equipment extends Component {
               </Link>
             </div>
           </div>
-        </header>
+        </header> */}
         <div className = "equipList">
           {equipElems}
         </div>

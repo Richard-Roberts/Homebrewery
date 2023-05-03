@@ -1,20 +1,16 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom'; // will add this in with use for buttons
-// import EquipmentBox from './EquipmentBox';
-import HeadingBar from './HeadingBar';
+import { Link } from 'react-router-dom';
 
-
-class Main extends Component {
+class HeadingBar extends Component {
   constructor(props) {
     super(props);
     this.state = {};
   }
 
-  render() {
+  render () {
     return (
       <section>
-        <HeadingBar></HeadingBar>
-        {/* <header className="pageHeader">
+        <header className="pageHeader">
           <div className="headerTitle">Homebrew Compendium</div>
           <div className="LinkButtons">
             <div className="headerButtons">
@@ -37,17 +33,10 @@ class Main extends Component {
               </Link>
             </div>
           </div>
-        </header> */}
-        <div className="mainPageDiv">
-          <div className = "mainDiv">
-            <input className="mainInput" placeholder="search..."></input>
-            <button className="createBtn">Submit</button>
-          </div>
-        </div>
+        </header>
       </section>
     );
   }
-
 }
 
-export default Main;
+export default HeadingBar;
