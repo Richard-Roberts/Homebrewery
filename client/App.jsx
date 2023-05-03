@@ -4,7 +4,7 @@ import { Routes, Route } from 'react-router-dom';
 import Main from './components/Main';
 import Equipment from './components/Equipment';
 import Create from './components/Create';
-// import CreateCharacter from './components/CreateCharacter';
+// import CreateCharacter from './components/CreateCharacter'; 'To be added later'
 
 import './stylesheets/styles.css';
 

@@ -7,6 +7,8 @@ const apiRouter = require('./routes/api');
 
 const PORT = 3000;
 
+require('dotenv').config();
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
